@@ -1,0 +1,92 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "Consultas faltantes",
+    "collectionId": "d495beee-e3ab-4257-9f25-c652a582f8fe",
+    "dateExported": "2024-04-30T03:55:24.482Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "138955bc-ccd7-49a8-a889-795a8c27c7f1",
+            "colId": "d495beee-e3ab-4257-9f25-c652a582f8fe",
+            "containerId": "",
+            "name": "rooms hotel",
+            "url": "room/RoomsByIdHotel/6630379ca179224ea6d3ae40",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-04-30T00:21:13.473Z",
+            "modified": "2024-04-30T01:30:13.171Z",
+            "headers": []
+        },
+        {
+            "_id": "64a1952c-01e2-4b08-96d2-066ecc9aa0d9",
+            "colId": "d495beee-e3ab-4257-9f25-c652a582f8fe",
+            "containerId": "",
+            "name": "rooms available from hotel",
+            "url": "room/getAvailableRoomsByHotelId/6630379ca179224ea6d3ae40",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2024-04-30T00:41:06.463Z",
+            "modified": "2024-04-30T01:30:44.043Z",
+            "headers": []
+        },
+        {
+            "_id": "a1ac70f6-4d78-4aeb-badc-cd7405dd3ae3",
+            "colId": "d495beee-e3ab-4257-9f25-c652a582f8fe",
+            "containerId": "",
+            "name": "event by hotel",
+            "url": "event/getEventsHotel/6630379ca179224ea6d3ae40",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2024-04-30T01:23:24.320Z",
+            "modified": "2024-04-30T01:24:44.117Z",
+            "headers": []
+        },
+        {
+            "_id": "b8641e8c-4aa4-4b0f-9ab9-445612e4dce7",
+            "colId": "d495beee-e3ab-4257-9f25-c652a582f8fe",
+            "containerId": "",
+            "name": "findAvailableRooms",
+            "url": "room/findFilter",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2024-04-30T02:36:30.357Z",
+            "modified": "2024-04-30T03:37:14.496Z",
+            "headers": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "adress",
+                        "value": "Carretera"
+                    },
+                    {
+                        "name": "checkIn",
+                        "value": "2024-05-10"
+                    },
+                    {
+                        "name": "checkOut",
+                        "value": "2024-08-11"
+                    },
+                    {
+                        "name": "people",
+                        "value": "2"
+                    }
+                ]
+            }
+        }
+    ],
+    "settings": {
+        "headers": [
+            {
+                "name": "Authorization",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjMwMzY4MmExNzkyMjRlYTZkM2FlMjUiLCJ1c2VybmFtZSI6ImNhbHRhbiIsIm5hbWVVc2VyIjoiQ2FybG9zIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNzE0NDM1OTI1LCJleHAiOjE3MTQ0NDY3MjV9.htmqUmrDJkFZej52P5UwC2fa0D5Px-e2ymHAzfdWK5o"
+            }
+        ],
+        "options": {
+            "baseUrl": "localhost:2656/"
+        }
+    },
+    "ref": "oqZfxSuQgULL1XT3xJ47MsiiPOEHpQGtaQN5WqFY7YuNfNqXR6iHERL1fDTUCfEVKwWLecLkoFn19F2gqIYicw"
+}

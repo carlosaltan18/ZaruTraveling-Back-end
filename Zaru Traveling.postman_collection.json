@@ -1,0 +1,559 @@
+{
+	"info": {
+		"_postman_id": "5f08ae27-2d51-4765-8cd6-4d7322bbb826",
+		"name": "Zaru Traveling",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34907660"
+	},
+	"item": [
+		{
+			"name": "Usuario",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "santygonzalez@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "futbol00",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:2656/user/login",
+							"host": [
+								"localhost"
+							],
+							"port": "2656",
+							"path": [
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "nameUser",
+									"value": "Santiago",
+									"type": "text"
+								},
+								{
+									"key": "surname",
+									"value": "Gonzalez",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "pampichi",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "futbol00",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "santygonzalezherrera@kinal.edu.gt",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "55887799",
+									"type": "text"
+								},
+								{
+									"key": "role",
+									"value": "CLIENT",
+									"type": "text"
+								},
+								{
+									"key": "imagesUser",
+									"value": "https://i0.wp.com/okantigua.com/wp-content/uploads/2012/09/Lake-Amatitlan-1-12.jpg?fit=1024%2C719&ssl=1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:2656/user/register",
+							"host": [
+								"localhost"
+							],
+							"port": "2656",
+							"path": [
+								"user",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Editar Usuario",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Cache-Control",
+								"value": "no-cache",
+								"name": "cache-control",
+								"type": "text"
+							},
+							{
+								"key": "Postman-Token",
+								"value": "<calculated when request is sent>",
+								"name": "postman-token",
+								"type": "text"
+							},
+							{
+								"key": "Content-Length",
+								"value": "0",
+								"name": "content-length",
+								"type": "text"
+							},
+							{
+								"key": "Host",
+								"value": "<calculated when request is sent>",
+								"name": "host",
+								"type": "text"
+							},
+							{
+								"key": "User-Agent",
+								"value": "PostmanRuntime/7.32.1",
+								"name": "user-agent",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "*/*",
+								"name": "accept",
+								"type": "text"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "gzip, deflate, br",
+								"name": "accept-encoding",
+								"type": "text"
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive",
+								"name": "connection",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjMxODIzMmVkZTY5YjQ3N2Y0ODE0OWUiLCJ1c2VybmFtZSI6Imp1YW51aSIsIm5hbWVVc2VyIjoiSnVhbmV0YSIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTcxNTY2MjgyNiwiZXhwIjoxNzE1NjczNjI2fQ.1GT3-KlbPGz9FrGDFY7sbeIIM0mHkksIbXLfnauKHmM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "nameUser",
+									"value": "Juan",
+									"type": "text"
+								},
+								{
+									"key": "surname",
+									"value": "Rodriguez",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "Juani",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "email",
+									"value": "juaneto@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "12344321",
+									"type": "text"
+								},
+								{
+									"key": "role",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "imagesUser",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:2656/user/updateUser",
+							"host": [
+								"localhost"
+							],
+							"port": "2656",
+							"path": [
+								"user",
+								"updateUser"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Hotel",
+			"item": [
+				{
+					"name": "Agregar Hotel",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Cache-Control",
+								"value": "no-cache",
+								"name": "cache-control",
+								"type": "text"
+							},
+							{
+								"key": "Postman-Token",
+								"value": "<calculated when request is sent>",
+								"name": "postman-token",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"name": "content-type",
+								"type": "text"
+							},
+							{
+								"key": "Content-Length",
+								"value": "<calculated when request is sent>",
+								"name": "content-length",
+								"type": "text"
+							},
+							{
+								"key": "Host",
+								"value": "<calculated when request is sent>",
+								"name": "host",
+								"type": "text"
+							},
+							{
+								"key": "User-Agent",
+								"value": "PostmanRuntime/7.32.1",
+								"name": "user-agent",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "*/*",
+								"name": "accept",
+								"type": "text"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "gzip, deflate, br",
+								"name": "accept-encoding",
+								"type": "text"
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive",
+								"name": "connection",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjMxODIzMmVkZTY5YjQ3N2Y0ODE0OWUiLCJ1c2VybmFtZSI6Imp1YW51aSIsIm5hbWVVc2VyIjoiSnVhbmV0YSIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTcxNTY2MjMxNywiZXhwIjoxNzE1NjczMTE3fQ.mCnql4ZvOskuNabGQpz3E5jCeSrv_FoJrJ7k3nV-QWY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "California",
+									"type": "text"
+								},
+								{
+									"key": "country",
+									"value": "Guatemala",
+									"type": "text"
+								},
+								{
+									"key": "city",
+									"value": "Amatitlan",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "15 avenida 4-22",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "55998877",
+									"type": "text"
+								},
+								{
+									"key": "categoryHotel",
+									"value": "66298686ae37e6b1e4bf4bda",
+									"type": "text"
+								},
+								{
+									"key": "imagesHotel",
+									"value": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUc6jmFYFGYfzKyod14Ar_5gVCtfRKIGDOvUTJjSRRWw&s",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:2656/hotel/addHotel",
+							"host": [
+								"localhost"
+							],
+							"port": "2656",
+							"path": [
+								"hotel",
+								"addHotel"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Rooms",
+			"item": [
+				{
+					"name": "Agregar Cuarto",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Cache-Control",
+								"value": "no-cache",
+								"name": "cache-control",
+								"type": "text"
+							},
+							{
+								"key": "Postman-Token",
+								"value": "<calculated when request is sent>",
+								"name": "postman-token",
+								"type": "text"
+							},
+							{
+								"key": "Content-Length",
+								"value": "0",
+								"name": "content-length",
+								"type": "text"
+							},
+							{
+								"key": "Host",
+								"value": "<calculated when request is sent>",
+								"name": "host",
+								"type": "text"
+							},
+							{
+								"key": "User-Agent",
+								"value": "PostmanRuntime/7.32.1",
+								"name": "user-agent",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "*/*",
+								"name": "accept",
+								"type": "text"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "gzip, deflate, br",
+								"name": "accept-encoding",
+								"type": "text"
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive",
+								"name": "connection",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjI5ODY4NmFlMzdlNmIxZTRiZjRiZDQiLCJ1c2VybmFtZSI6ImNhbHRhbiIsIm5hbWVVc2VyIjoiQ2FybG9zIiwicm9sZSI6IkFETUlOSE9URUwiLCJpYXQiOjE3MTU2NjI2NDUsImV4cCI6MTcxNTY3MzQ0NX0.2LrGQdMaY_be7WlItbA5dgywZJHqB48QjeE_mrgZZro",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "description",
+									"value": "Cuarto para adultos",
+									"type": "text"
+								},
+								{
+									"key": "beds",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "amountOfPeople",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "amenities",
+									"value": "ninguna",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "250",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "AVAILABLE",
+									"type": "text"
+								},
+								{
+									"key": "hotel",
+									"value": "6642eeceb391993791f47502",
+									"type": "text"
+								},
+								{
+									"key": "categoryRoom",
+									"value": "66298686ae37e6b1e4bf4bdd",
+									"type": "text"
+								},
+								{
+									"key": "imagesRoom",
+									"value": "https://static.leonardo-hotels.com/image/leonardohotelbucharestcitycenter_room_comfortdouble2_2022_4000x2600_7e18f254bc75491965d36cc312e8111f_1200x780_mobile_3.jpeg",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:2656/room/addRoom",
+							"host": [
+								"localhost"
+							],
+							"port": "2656",
+							"path": [
+								"room",
+								"addRoom"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Encontrar Cuartos",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cache-Control",
+								"value": "no-cache",
+								"name": "cache-control",
+								"type": "text"
+							},
+							{
+								"key": "Postman-Token",
+								"value": "<calculated when request is sent>",
+								"name": "postman-token",
+								"type": "text"
+							},
+							{
+								"key": "Host",
+								"value": "<calculated when request is sent>",
+								"name": "host",
+								"type": "text"
+							},
+							{
+								"key": "User-Agent",
+								"value": "PostmanRuntime/7.32.1",
+								"name": "user-agent",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "*/*",
+								"name": "accept",
+								"type": "text"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "gzip, deflate, br",
+								"name": "accept-encoding",
+								"type": "text"
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive",
+								"name": "connection",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjMxODIzMmVkZTY5YjQ3N2Y0ODE0OWUiLCJ1c2VybmFtZSI6Imp1YW51aSIsIm5hbWVVc2VyIjoiSnVhbmV0YSIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTcxNTY2MjgyNiwiZXhwIjoxNzE1NjczNjI2fQ.1GT3-KlbPGz9FrGDFY7sbeIIM0mHkksIbXLfnauKHmM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "localhost:2656/room/findAvailableRoomsMain",
+							"host": [
+								"localhost"
+							],
+							"port": "2656",
+							"path": [
+								"room",
+								"findAvailableRoomsMain"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
